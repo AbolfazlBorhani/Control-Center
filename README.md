@@ -20,3 +20,5 @@
 
 * Usage 
   - To use the Control Center, simply navigate through the options available in the interface. Each feature is designed to be intuitive and user-friendly, ensuring that you can manage your system with ease.
+
+![1](https://github.com/user-attachments/assets/6f1439e3-a7df-44c0-bbc1-662176a5fa19)
