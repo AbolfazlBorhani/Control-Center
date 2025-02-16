@@ -1,5 +1,5 @@
 * Control Center
-The Control Center is a comprehensive system management tool designed to provide users with a wide range of functionalities to manage their system efficiently. Below is a list of the key features available in the Control Center:
+  - The Control Center is a comprehensive system management tool designed to provide users with a wide range of functionalities to manage their system efficiently. Below is a list of the key features available in the Control Center:
 
 * Features
   - User Name Display: Shows the current logged-in user's name.
@@ -19,4 +19,4 @@ The Control Center is a comprehensive system management tool designed to provide
   - Monitor Brightness Control: Enables the user to adjust the brightness of the monitor.
 
 * Usage 
-To use the Control Center, simply navigate through the options available in the interface. Each feature is designed to be intuitive and user-friendly, ensuring that you can manage your system with ease.
+  - To use the Control Center, simply navigate through the options available in the interface. Each feature is designed to be intuitive and user-friendly, ensuring that you can manage your system with ease.
