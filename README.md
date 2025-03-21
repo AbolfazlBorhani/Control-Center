@@ -48,7 +48,7 @@ To build the project, ensure you have CMake installed on your system. Follow the
    $ git clone https://github.com/AbolfazlBorhani/Control-Center.git
    $ cd Control-Center
 ```
-2. Run CMake to configure the project and build:
+2. Run CMake to configure the project:
 ```
    $ cmake -B build
 ```
