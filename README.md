@@ -7,18 +7,18 @@ The Command Line Control Center (CLCC) is a command-line utility designed to pro
 
 Features
 ================
-Brightness Control
+Brightness Control:
 - Get Current Brightness Value: Retrieve the current brightness level.
 - Set Brightness Value: Adjust the brightness to a specified level.
 
-Hardware Information
+Hardware Information:
 - CPU Info: Display detailed information about the CPU.
 - GPU Info: Display detailed information about the GPU.
 - RAM Info: Display detailed information about the RAM.
 - Disk Info: Display detailed information about the disk.
 - Network Info: Display detailed information about the network.
 
-System Management
+System Management:
 - Username: Display the current username.
 - Time: Display the current system time.
 - Date: Display the current system date.
@@ -33,7 +33,7 @@ System Management
 - Show Running Processes: Display a list of currently running processes.
 - Kill Process: Terminate a specified process.
 
-Volume Control
+Volume Control:
 - Get Current Volume Value: Retrieve the current volume level.
 - Set Volume Value: Adjust the volume to a specified level.
 - Mute: Mute the volume.
