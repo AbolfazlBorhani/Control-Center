@@ -56,7 +56,7 @@ To build the project, ensure you have CMake installed on your system. Follow the
 ```
    $ cmake --build build
 ```
-5. Run the executable:
+4. Run the executable:
 ```
    $ ./build/ControlCenter.exe --help
 ```
