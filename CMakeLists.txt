@@ -10,19 +10,19 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/ControlCenter/lib)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}-static-libstdc++ -static-libgcc")
 
-add_subdirectory(whi3perlib)
+add_subdirectory(whi3per)
 add_executable(${PROJECT_NAME} main.cc)
 
 target_include_directories (
     ${PROJECT_NAME} 
     PUBLIC 
-        whi3perlib/include/public
+        whi3per/include/public
 )
 
 target_link_libraries (
     ${PROJECT_NAME} 
     PUBLIC 
-        whi3perlib
+        whi3per
 )
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE -D_WIN32_WINNT=0x0501)
