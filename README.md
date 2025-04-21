@@ -11,7 +11,6 @@
          ██║     ██╔══╝  ██║ ████║   ██║   ██╔══╝  ██╔══██╗
          ╚██████╗███████╗██║  ███║   ██║   ███████╗██║  ██║
           ╚═════╝╚══════╝╚═╝  ╚══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
-
    ╔════════════╗                    ╔════════════╗
  ╔═╣  HardWare  ╠════════════════╗ ╔═╣ Brightness ╠════════════════╗
  ║ ╚════════════╝                ║ ║ ╚════════════╝                ║
@@ -29,13 +28,13 @@
    ╔════════════╗
  ╔═╣   System   ╠══════════════════════════════════════════════════╗
  ║ ╚════════════╝                                                  ║
- ║ [*] username                            [*] calculator          ║
- ║ [*] time                                [*] settings            ║
- ║ [*] date                                [*] lockscreen          ║
- ║ [*] shutdown                            [*] signout             ║
- ║ [*] restart                             [*] showrunnigprocesses ║
- ║ [*] sleep                               [*] killprocess         ║
- ║ [*] taskmanager                         [*] Undefiend           ║
+ ║ [*] username                      [*] calculator                ║
+ ║ [*] time                          [*] settings                  ║
+ ║ [*] date                          [*] lockscreen                ║
+ ║ [*] shutdown                      [*] signout                   ║
+ ║ [*] restart                       [*] showrunnigprocesses       ║
+ ║ [*] sleep                         [*] killprocess <x>           ║
+ ║ [*] taskmanager                   [*] Undefiend                 ║
  ╚═════════════════════════════════════════════════════════════════╝
 ```
 
