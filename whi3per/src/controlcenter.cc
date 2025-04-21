@@ -5,13 +5,8 @@
 #include <whi3per/system.hh>
 
 void ControlCenter::RunProgram(int argc, char** argv) {
-    #if defined _WIN32
+    std::system("chcp 65001");
     std::system("cls");
-    #elif defined(__linux__)
-    std::system("clear");
-    #elif defined (__APPLE__)
-    std::system("clear");
-    #endif
 
     if (argc < 2) {
         ControlCenter::Help();
@@ -143,38 +138,78 @@ void ControlCenter::RunProgram(int argc, char** argv) {
     }
 
     std::system("pause>0");
+    std::system("cls");
 }
 
 void ControlCenter::Help() {
-    std::cout << "Usage:\n"
-              << "       [--version]\n"
-              << "       [--help]\n\n"
-              << "Brightness Section:\n"
-              << "       [getcurrentbrightnessvalue]\n"
-              << "       [setbrightnessvalue x]\n\n"
-              << "HardWare Section:\n"
-              << "       [CPUinfo]\n"
-              << "       [GPUinfo]\n"
-              << "       [RAMinfo]\n"
-              << "       [DISKinfo]\n"
-              << "       [Networkinfo]\n\n"
-              << "System Section:\n"
-              << "       [username]\n"
-              << "       [time]\n"
-              << "       [date]\n"
-              << "       [shutdown]\n"
-              << "       [restart]\n"
-              << "       [sleep]\n"
-              << "       [taskmanager]\n"
-              << "       [calculator]\n"
-              << "       [settings]\n"
-              << "       [lockscreen]\n"
-              << "       [signout]\n"
-              << "       [showrunnigprocesses]\n"
-              << "       [killprocess]\n\n"
-              << "Volume Section:\n"
-              << "       [getcurrentvolumevalue]\n"
-              << "       [setvolumevalue x]\n"
-              << "       [mute]\n"
-              << "       [checkmutestatus]\n\n";        
+    const int ONE{ 10 };
+    const int TWO{ 12 };
+	const int THREE{ 9 };
+    const int FOUR{ 14 };
+
+    SetConsoleTextAttribute(ControlCenter::hConsole, ONE);
+    std::cout << "                                                                    \n";
+    std::cout << "  ██████╗ █████╗ ███╗  ██╗████████╗██████╗  █████╗ ██╗              \n";
+    std::cout << " ██╔════╝██╗  ██╗████╗ ██║   ██╔══╝██╔══██╗██╗  ██╗██║              \n";
+    std::cout << " ██║     ██║  ██║██╗██╗██║   ██║   ██████╔╝██║  ██║██║              \n";
+    std::cout << " ██║     ██║  ██║██║ ████║   ██║   ██╔══██╗██║  ██║██║              \n"; 
+    std::cout << " ╚██████╗╚█████╔╝██║  ███║   ██║   ██║  ██║╚█████╔╝███████╗         \n";
+    std::cout << "  ╚═════╝ ╚════╝ ╚═╝  ╚══╝   ╚═╝   ╚═╝  ╚═╝ ╚════╝ ╚══════╝         \n";
+    std::cout << "          ██████╗███████╗███╗  ██╗████████╗███████╗██████╗          \n";
+    std::cout << "         ██╔════╝██╔════╝████╗ ██║   ██╔══╝██╔════╝██╔══██╗         \n";
+    std::cout << "         ██║     █████╗  ██╗██╗██║   ██║   █████╗  ██████╔╝         \n";
+    std::cout << "         ██║     ██╔══╝  ██║ ████║   ██║   ██╔══╝  ██╔══██╗         \n";
+    std::cout << "         ╚██████╗███████╗██║  ███║   ██║   ███████╗██║  ██║         \n";
+    std::cout << "          ╚═════╝╚══════╝╚═╝  ╚══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝         \n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, TWO);
+    std::cout << "   ╔════════════╗                    ╔════════════╗                 \n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, THREE);
+    std::cout << " ╔═╣  HardWare  ╠════════════════╗ ╔═╣ Brightness ╠════════════════╗\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, FOUR);
+    std::cout << " ║ ╚════════════╝                ║ ║ ╚════════════╝                ║\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, TWO);
+    std::cout << " ║ [*] CPUinfo                   ║ ║ [*] getcurrentbrightnessvalue ║\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, THREE);
+    std::cout << " ║ [*] GPUinfo                   ║ ║ [*] setbrightnessvalue <x>    ║\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, FOUR);
+    std::cout << " ║ [*] RAMinfo                   ║ ╚═══════════════════════════════╝\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, TWO);
+    std::cout << " ║ [*] DISKinfo                  ║   ╔════════════╗                 \n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, THREE);
+    std::cout << " ║ [*] Networkinfo               ║ ╔═╣   Volume   ╠════════════════╗\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, FOUR);
+    std::cout << " ║ [*] Undefied                  ║ ║ ╚════════════╝                ║\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, TWO);
+    std::cout << " ║ [*] Undefied                  ║ ║ [*] getcurrentvolumevalue     ║\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, THREE);
+    std::cout << " ║ [*] Undefied                  ║ ║ [*] setvolumevalue            ║\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, FOUR);
+    std::cout << " ║ [*] Undefied                  ║ ║ [*] mute                      ║\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, TWO);
+    std::cout << " ║ [*] Undefied                  ║ ║ [*] checkmutestatus           ║\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, THREE);
+    std::cout << " ╚═══════════════════════════════╝ ╚═══════════════════════════════╝\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, FOUR);
+    std::cout << "   ╔════════════╗                                                   \n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, TWO);
+    std::cout << " ╔═╣   System   ╠══════════════════════════════════════════════════╗\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, THREE);
+    std::cout << " ║ ╚════════════╝                                                  ║\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, FOUR);
+    std::cout << " ║ [*] username                      [*] calculator                ║\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, TWO);
+    std::cout << " ║ [*] time                          [*] settings                  ║\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, THREE);
+    std::cout << " ║ [*] date                          [*] lockscreen                ║\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, FOUR);
+    std::cout << " ║ [*] shutdown                      [*] signout                   ║\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, TWO);
+    std::cout << " ║ [*] restart                       [*] showrunnigprocesses       ║\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, THREE);
+    std::cout << " ║ [*] sleep                         [*] killprocess <x>           ║\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, FOUR);
+    std::cout << " ║ [*] taskmanager                   [*] Undefiend                 ║\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, TWO);
+    std::cout << " ╚═════════════════════════════════════════════════════════════════╝\n";
+    SetConsoleTextAttribute(ControlCenter::hConsole, 7);    
 }
